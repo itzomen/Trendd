@@ -1,9 +1,11 @@
 import React from 'react';
 import { Grid, Grow, Typography } from '@material-ui/core';
 
+import useStyles from './styles.js'
 import NewsCard from '../NewsCard/NewsCard';
 
 const NewsCards = ({ articles }) => {
+    const  classes = useStyles();
     return (
         <Grow in>
             <Grid className={classes.container} container alignItems="stretch" spacing={3}>
