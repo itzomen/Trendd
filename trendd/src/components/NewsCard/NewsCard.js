@@ -1,13 +1,17 @@
 import React from 'react';
 import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
 
+import useStyles from './styles.js';
+
 
 const NewsCard = ({ article, i}) => {
     //console.log(article);
+    const classes = useStyles();
+
     return (
         <Card>
             <CardActionArea>
-                <CardMedia image={article.urlToImage || 'https://github.com/itzomen/Trendd/blob/main/Trendd.png' } />
+                <CardMedia className={classes.media} image={article.urlToImage || 'https://github.com/itzomen/Trendd/blob/main/Trendd.png' } />
                     <div>
                         <Typography variant="body2" color="textSecondary" component="h2">{( new Date(article.publishedAt)).toDateString()}</Typography>
                         <Typography variant="body2" color="textSecondary" component="h2">{article.source.name}</Typography>
