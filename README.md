@@ -1,6 +1,8 @@
 # Trendd
 <img src="Trendd.png" width="150px" alt="hi">
+
 This is an AI powered News app
+
 ## Getting Started
 ## [Preview Trendd](https://trendd.herokuapp.com/)
 #### Install dependencies
